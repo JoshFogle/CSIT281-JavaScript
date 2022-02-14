@@ -16,6 +16,10 @@ p {
   border-color: #00CC00; */
 }
 
+.page-title {
+  color: #00CCCC;
+}
+
 </style>
 
 </head>
@@ -31,6 +35,84 @@ p {
   Console tag. You should see the console.log data printed in the console </p>
 
 </select>
+
+  <script type="text/javascript">
+
+  let pageView = 0;
+  let pageTitle = 'My Title';
+  let pageAuthor = 'Josh Fogle';
+
+
+  function pageTitles() {
+    document.write(pageTitle);
+    }
+  function pageAuthors() {
+    document.write(pageAuthor);
+  }
+
+  function pageViews() {
+    pageView++;
+    document.write(pageView);
+  }
+
+
+</script>
+
+
+
+  <h1 class="page-title"><script>pageTitles();</script></h1>
+
+  <p>By: <script>pageAuthors();</script></p>
+
+  <small><script>pageViews();</script></small>
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+  <script type="text/javascript">
+
+  function myAlert() {
+    let alertNumber = 1;
+
+    if (alertNumber <= 3) {
+      alert('Oh No!');
+    } else {
+      alert('Finally Over!')
+    }
+
+    alertNumber++;
+
+    alert(alertNumber);
+  }
+
+//  myAlert();
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
 
