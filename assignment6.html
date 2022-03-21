@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 6: CSIT 281 - JavaScript</title>
+</head>
+<script type="text/javascript">
+
+
+// Number
+let numberExample = 7;
+let numberExampleType = typeof numberExample;
+document.write(`<b>${numberExample}</b> is an example of a <b>${numberExampleType}</b> data type`);
+
+// String
+let stringExample = "Hello World";
+let stringExampleType = typeof stringExample;
+document.write(`<br><b>"${stringExample}"</b> is an example of a <b>${stringExampleType}</b> data type`);
+
+// Boolean
+let booleanExample = true;
+let booleanExampleType = typeof booleanExample;
+document.write(`<br><b>${booleanExample}</b> is an example of a <b>${booleanExampleType}</b> data type`);
+
+// Null
+let nullExample = null;
+let nullExampleType = typeof nullExample;
+document.write(`<br><b>let nullExample = null</b> is an example of a <b>null</b> data type`);
+
+// Undefined
+let undefinedExample;
+let undefinedExampleType = typeof undefinedExample;
+document.write(`<br><b>let undefinedExample;</b> is an example of a <b>${undefinedExampleType}</b> data type`);
+
+// Symbol
+let symbolExample = Symbol('hello');
+let symbolExampleType = typeof symbolExample;
+document.write(`<br><b>Symbol('hello')</b> is an example of a <b>${symbolExampleType}</b> data type`);
+
+// Object
+let objectExample = {name:"John", age:"25", gender:"Male"};
+let objectExampleType = typeof objectExample;
+document.write(`<br><b>{name:"John", age:"25", gender:"Male"}</b> is an example of a <b>${objectExampleType}</b> data type`);
+
+// BigInt
+let bigIntExample = BigInt("8237286428462864284");
+let bigIntExampleType = typeof bigIntExample;
+document.write(`<br><b>BigInt("8237286428462864284")</b> is an example of a <b>${bigIntExampleType}</b> data type`);
+
+
+
+</script>
+
+</html>
