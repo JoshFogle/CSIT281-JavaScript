@@ -10,10 +10,14 @@
     let animals = ['Lamb', 'Sheep', 'Cow', 'Dog', 'Cat']
 
     for (let alertLoopNumber = 0; alertLoopNumber <= 4; alertLoopNumber++) {
-      document.write(animals[0]);
+      document.write(animals[alertLoopNumber]);
     }
 
+    document.write(animals[0]);
 
+    animals.forEach(animal => {
+      document.write('<li>' + animal+ '</li>')
+    });
 </script>
 
 </body>
