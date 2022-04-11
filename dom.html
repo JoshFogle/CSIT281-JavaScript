@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+</style>
+
+
+</head>
+
+<body>
+
+
+<form>
+
+Select your favorite color to use as the background:
+
+<select id="background" onchange="updateBackgroundColor(this)">
+  <option value="#ffffff">White</option>
+  <option value="#cc0000">Red</option>
+  <option value="#0000cc">Blue</option>
+  <option value="#00cc00">Green</option>
+</select>
+
+</form>
+
+
+
+<script>
+
+function updateBackgroundColor(selectElem) {
+  var i = selectElem.selectedIndex;
+  if (i < 0) {
+    return;
+  }
+  document.body.style.backgroundColor = selectElem.options[i].value
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
