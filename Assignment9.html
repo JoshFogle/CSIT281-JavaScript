@@ -45,7 +45,7 @@ Select the sport to see my favorite team:
 <div id="Basketball" class="Sports" style="display:none">
 <h1>Los Angeles Clippers <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/668-basketball.svg/1200px-668-basketball.svg.png" width="30" height="30" style="margin-bottom:-4px"></h1>
 <img src="https://www.nba.com/clippers/sites/clippers/files/lac-global-180705.png?w=180&h=105g" width="370" height="370">
-<p style="width:600px">I didn't really known anyone that watched basketball so I didn't really know much about it or any of the teams. When I started to watch basketball around 2012 I saw the days of "Loby City" which consisted of a lot of alley oops and dunks. As a new fan it was entertaining to watch and lI oved the style of basketball they played with players like Blake Griffin, Chris Paul and Deandre Jordan. To this day they have some great players that I enjoy to watch like Kawhi Leonard and Paul George.</p>
+<p style="width:600px">I didn't really known anyone that watched basketball so I didn't really know much about it or any of the teams. When I started to watch basketball around 2012 I saw the days of "Loby City" which consisted of a lot of alley oops and dunks. As a new fan it was entertaining to watch and I loved the style of basketball they played with players like Blake Griffin, Chris Paul, and Deandre Jordan. To this day they have some great players that I enjoy to watch like Kawhi Leonard and Paul George.</p>
 </div>
 
 <div id="Baseball" class="Sports" style="display:none">
@@ -108,7 +108,8 @@ function updateSportsTeam(selectElem) {
     document.getElementById("Baseball").style.display = "None"
     document.getElementById("Football").style.display = "None"
     document.getElementById("Hockey").style.display = "Block"
-
+  } else {
+    document.write("Something went wrong. Please Refresh")
   }
 }
 
