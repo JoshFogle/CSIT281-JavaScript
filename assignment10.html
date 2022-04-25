@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Assignment 10: CSIT 281 - JavaScript </title>
+<style>
+
+.counter-button {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 10px;
+  border-width: 2.5px;
+}
+
+#increase {
+  background-color: #A9EAA9;
+}
+
+#decrease {
+  background-color: #FF9494;
+}
+
+#reset {
+  position: relative;
+  bottom: 7px;
+  background-color: #F7F7F7;
+  font-size: 20px;
+}
+
+#number {
+  position: relative;
+  bottom: 10px;
+  font-size: 80px;
+}
+
+#decrease:hover {
+  background-color: #FF6161;
+  cursor: pointer;
+}
+
+#increase:hover {
+  background-color: #57D657;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #DEDEDE;
+  cursor: pointer;
+}
+
+html
+{
+  font-family: Arial;
+}
+</style>
+
+</head>
+
+<body>
+<div id="number"></div>
+
+  <!-- Calls the function decreaseCounterNumber() whenever the button is clicked -->
+  <button id="decrease" class="counter-button" onclick="decreaseCounterNumber()">-</button>
+
+  <!-- Calls the function increaseCounterNumber() whenever the button is clicked -->
+  <button id="increase" class="counter-button" onclick="increaseCounterNumber()">+</button>
+
+  <!-- Calls the function resetCounterNumber() whenever the button is clicked -->
+  <button id="reset" class="counter-button" onclick="resetCounterNumber()">Reset</button>
+
+<script>
+
+
+// Sets the default displayed number to 0
+document.getElementById("number").innerHTML = 0;
+
+// Increases the displayed number by 1
+function increaseCounterNumber() {
+  document.getElementById("number").innerHTML++
+}
+
+// Decreases the displayed number by 1
+function decreaseCounterNumber() {
+  document.getElementById("number").innerHTML--
+
+// Prevents the displayed number from going lower than 0
+  if (document.getElementById("number").innerHTML < 0) {
+    document.getElementById("number").innerHTML = 0;
+  }
+}
+
+// Resets the displayed number back to 0
+function resetCounterNumber () {
+  document.getElementById("number").innerHTML = 0
+}
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
